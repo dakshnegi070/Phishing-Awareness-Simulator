@@ -13,42 +13,59 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#0d1117;
-    color:#e6edf3;
-    line-height:1.6;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#050816,#0f172a,#020617);
+    color:#e5e7eb;
+    line-height:1.7;
 }
 
 header{
-    background:#161b22;
-    padding:40px 20px;
     text-align:center;
-    border-bottom:2px solid #ff9800;
+    padding:70px 20px;
+    background:linear-gradient(90deg,#00ff99,#00ccff);
+    color:#000;
+    box-shadow:0 0 30px rgba(0,255,153,.4);
+}
+
+header .icon{
+    font-size:70px;
+    margin-bottom:10px;
 }
 
 header h1{
-    color:#58a6ff;
-    font-size:42px;
+    font-size:3rem;
+    font-weight:800;
     margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+    font-weight:600;
 }
 
 .container{
     width:90%;
-    max-width:1100px;
-    margin:auto;
-    padding:30px 0;
+    max-width:1200px;
+    margin:40px auto;
 }
 
 .card{
-    background:#161b22;
-    padding:25px;
+    background:rgba(15,23,42,.95);
+    border:1px solid rgba(0,255,153,.25);
+    border-radius:16px;
+    padding:30px;
     margin-bottom:25px;
-    border-radius:10px;
-    border-left:5px solid #ff9800;
+    box-shadow:0 0 20px rgba(0,255,153,.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 30px rgba(0,255,153,.25);
 }
 
 h2{
-    color:#58a6ff;
+    color:#00ff99;
     margin-bottom:15px;
 }
 
@@ -56,25 +73,52 @@ ul{
     margin-left:25px;
 }
 
+li{
+    margin-bottom:8px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.stat{
+    background:#111827;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid #00ff99;
+}
+
+.stat h3{
+    color:#00ff99;
+    font-size:2rem;
+}
+
 .button{
     display:inline-block;
-    background:#ff9800;
-    color:white;
-    padding:12px 20px;
+    padding:14px 28px;
+    border-radius:10px;
     text-decoration:none;
-    border-radius:6px;
-    margin-top:10px;
+    font-weight:bold;
+    background:linear-gradient(90deg,#00ff99,#00ccff);
+    color:#000;
+    transition:.3s;
 }
 
 .button:hover{
-    background:#e68900;
+    transform:scale(1.05);
+    box-shadow:0 0 25px rgba(0,255,153,.5);
 }
 
 footer{
     text-align:center;
-    padding:20px;
-    color:#8b949e;
-    border-top:1px solid #30363d;
+    padding:30px;
+    margin-top:40px;
+    border-top:1px solid #374151;
+    color:#9ca3af;
 }
 </style>
 </head>
@@ -82,85 +126,108 @@ footer{
 <body>
 
 <header>
+    <div class="icon">🛡️</div>
     <h1>Phishing Awareness Simulator</h1>
-    <p>Cyber Security Internship Project</p>
+    <p>Cyber Security Internship Project | Security Awareness Training Platform</p>
 </header>
 
 <div class="container">
 
-<div class="card">
-<h2>Project Overview</h2>
-<p>
-This project demonstrates a phishing awareness simulation designed to educate users
-about common phishing techniques and improve cybersecurity awareness.
-</p>
+<div class="stats">
+    <div class="stat">
+        <h3>5</h3>
+        <p>Simulation Scenarios</p>
+    </div>
+
+    <div class="stat">
+        <h3>100%</h3>
+        <p>Awareness Focused</p>
+    </div>
+
+    <div class="stat">
+        <h3>24/7</h3>
+        <p>Cybersecurity Education</p>
+    </div>
 </div>
 
 <div class="card">
-<h2>Objectives</h2>
-<ul>
-<li>Identify phishing indicators.</li>
-<li>Recognize suspicious emails and links.</li>
-<li>Understand social engineering tactics.</li>
-<li>Improve cybersecurity awareness.</li>
-<li>Reduce phishing-related risks.</li>
-</ul>
+    <h2>📌 Project Overview</h2>
+    <p>
+        The Phishing Awareness Simulator is designed to educate users about
+        phishing attacks, social engineering techniques, malicious links,
+        fake login pages, and email scams. The goal is to improve security
+        awareness and reduce the risk of credential theft.
+    </p>
 </div>
 
 <div class="card">
-<h2>Simulation Scenarios</h2>
-<ul>
-<li>Fake Banking Email</li>
-<li>Password Reset Scam</li>
-<li>Prize Winner Scam</li>
-<li>Fake Login Page</li>
-<li>Business Email Compromise</li>
-</ul>
+    <h2>🎯 Objectives</h2>
+    <ul>
+        <li>Identify phishing attacks.</li>
+        <li>Recognize suspicious emails.</li>
+        <li>Understand social engineering tactics.</li>
+        <li>Improve cybersecurity awareness.</li>
+        <li>Promote safe online behavior.</li>
+    </ul>
 </div>
 
 <div class="card">
-<h2>Warning Signs of Phishing</h2>
-<ul>
-<li>Suspicious sender address</li>
-<li>Urgent requests for action</li>
-<li>Unexpected attachments</li>
-<li>Misspelled URLs</li>
-<li>Requests for sensitive information</li>
-</ul>
+    <h2>📧 Phishing Simulation Scenarios</h2>
+    <ul>
+        <li>Banking Alert Scam</li>
+        <li>Password Reset Scam</li>
+        <li>Prize Winner Scam</li>
+        <li>Fake Login Portal</li>
+        <li>Business Email Compromise</li>
+    </ul>
 </div>
 
 <div class="card">
-<h2>Prevention Recommendations</h2>
-<ul>
-<li>Verify sender identities.</li>
-<li>Enable Multi-Factor Authentication.</li>
-<li>Never click unknown links.</li>
-<li>Check URLs before logging in.</li>
-<li>Report suspicious emails.</li>
-</ul>
+    <h2>⚠️ Common Warning Signs</h2>
+    <ul>
+        <li>Unknown sender addresses.</li>
+        <li>Urgent requests for action.</li>
+        <li>Unexpected attachments.</li>
+        <li>Suspicious links and URLs.</li>
+        <li>Requests for passwords or sensitive information.</li>
+    </ul>
 </div>
 
 <div class="card">
-<h2>Project Report</h2>
-<p>View the complete phishing awareness simulation report.</p>
-
-<a class="button"
-href="Phishing_Awareness_Report_DAKSH.pdf"
-target="_blank">
-View Full Report
-</a>
+    <h2>🔒 Security Recommendations</h2>
+    <ul>
+        <li>Enable Multi-Factor Authentication (MFA).</li>
+        <li>Verify email senders before responding.</li>
+        <li>Never click suspicious links.</li>
+        <li>Use strong unique passwords.</li>
+        <li>Report phishing attempts immediately.</li>
+        <li>Keep systems and software updated.</li>
+    </ul>
 </div>
 
 <div class="card">
-<h2>Author</h2>
-<p><strong>DAKSH</strong></p>
-<p>Cyber Security Internship Project Submission</p>
+    <h2>📄 Project Report</h2>
+    <p>
+        View the complete phishing awareness simulator report.
+    </p>
+
+    <a class="button"
+       href="Phishing_Awareness_Report_DAKSH.pdf"
+       target="_blank">
+       View Full Report
+    </a>
+</div>
+
+<div class="card">
+    <h2>👨‍💻 Author</h2>
+    <p><strong>DAKSH</strong></p>
+    <p>Cyber Security Internship Project Submission</p>
 </div>
 
 </div>
 
 <footer>
-© 2026 DAKSH | Phishing Awareness Simulator
+    © 2026 DAKSH | Phishing Awareness Simulator
 </footer>
 
 </body>
